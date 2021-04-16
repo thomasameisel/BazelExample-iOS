@@ -3,9 +3,11 @@ load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
 
 swift_library(
     name = "ManyModules",
-    srcs = glob([
-        "*.swift",
-    ]),
+    srcs = [
+        "AppDelegate.swift",
+        "SceneDelegate.swift",
+        "ViewController.swift",
+    ],
     deps = ["//Framework:Framework", "//StaticLib:StaticLib"],
 )
 
