@@ -3,7 +3,7 @@ load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
 swift_library(
     name = "StaticLib",
     srcs = glob([
-        "*.swift",
+        "StaticLib.swift",
     ]),
     module_name = "StaticLib",
     visibility = ["//visibility:public"],

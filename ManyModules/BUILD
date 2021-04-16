@@ -16,7 +16,10 @@ ios_application(
         "iphone",
     ],
     infoplists = [":Info.plist"],
-    minimum_os_version = "14.4",
+    minimum_os_version = "13.0",
+    frameworks = [
+        "//Framework:FrameworkFramework",
+    ],
     deps = [":ManyModules"],
     visibility = ["//visibility:public"],
 )
